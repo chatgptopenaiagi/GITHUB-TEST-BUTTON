@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-11-15T15:01:02.9277756Z",
+  "package": "dev.gtb.github_test_button",
+  "version": "0.1.0-beta.1",
+  "artifact": "dist/android/GTB-Android-universal.apk",
+  "artifact_sha256": "ac939a2471e96378ba142e45458be5e58ae2a957e4faa371e11050493017e386",
+  "environment": {
+    "serial": "emulator-5580",
+    "sdk": "37",
+    "android_release": "17",
+    "abi": "x86_64",
+    "model": "sdk_gphone64_x86_64",
+    "hardware": "ranchu",
+    "boot_completed": "1",
+    "physical_arm64_tested": false
+  },
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "evidence": "adb install -r returned Success for signed universal APK",
+      "status": "PASS",
+      "id": "install"
+    },
+    {
+      "evidence": "am start -W COLD Status ok, TotalTime4556ms; reports/android-launched.xml",
+      "status": "PASS",
+      "id": "launch"
+    },
+    {
+      "evidence": "Actual tap; CONNECTED5024ms, API HTTP200; reports/android-live.json and android-api-status.xml",
+      "status": "PASS",
+      "id": "main_button_real_connectivity"
+    },
+    {
+      "evidence": "UNAUTHENTICATED and four tools UNSUPPORTED_ON_PLATFORM while overall CONNECTED; reports/android-live.json",
+      "status": "PASS",
+      "id": "platform_authentication_separation"
+    },
+    {
+      "evidence": "Product metadata/files/latest commit/releases read successfully,3212ms, write_verified false; reports/android-repository.xml",
+      "status": "PASS",
+      "id": "repository_lookup"
+    },
+    {
+      "evidence": "Dark selected and rendered; assets/screenshots/android-dark.png",
+      "status": "PASS",
+      "id": "dark_mode"
+    },
+    {
+      "evidence": "After force-stop and COLD restart, Dark selected=true; reports/android-settings-persisted.xml",
+      "status": "PASS",
+      "id": "settings_persistence"
+    },
+    {
+      "evidence": "UI reported saved JSON in private app GTB-Reports directory; reports/android-export-json.xml. Private saved file not independently pulled.",
+      "status": "PASS",
+      "id": "json_export"
+    },
+    {
+      "evidence": "UI reported saved TXT in private app GTB-Reports directory; reports/android-export-txt.xml. Private saved file not independently pulled.",
+      "status": "PASS",
+      "id": "text_export"
+    },
+    {
+      "evidence": "Android share chooser opened; full JSON payload extracted from UI hierarchy and parsed as platform android overall CONNECTED; reports/android-share.xml and android-live.json. No transmission performed.",
+      "status": "PASS",
+      "id": "native_report_share"
+    },
+    {
+      "evidence": "Selected Română; localized settings/navigation observed; reports/android-romanian.xml",
+      "status": "PASS",
+      "id": "romanian_controls"
+    },
+    {
+      "evidence": "Selected Deutsch; localized settings/navigation observed; reports/android-german.xml",
+      "status": "PASS",
+      "id": "german_controls"
+    }
+  ],
+  "limitations": [
+    "No physical ARM64 device runtime test. ARM64 packaging metadata is verified separately.",
+    "Runtime target was Android17 API37 x86_64 emulator; other supported Android versions not executed.",
+    "Private JSON/TXT files observed through successful in-app save acknowledgement; shared JSON separately extracted and parsed.",
+    "Native share chooser and payload tested; no data transmitted to another app or person.",
+    "Technical diagnostic explanations remain English; primary controls localized.",
+    "Pre-install emulator System UI ANR recovered after Wait; not a GTB failure."
+  ],
+  "screenshots": [
+    "assets/screenshots/android-connected.png",
+    "assets/screenshots/android-dark.png"
+  ]
+}

@@ -1,0 +1,3 @@
+usage: gtb [-h]
+           {status,test,report,doctor,auth,repo,write-test,version,help} ...
+gtb: argument command: invalid choice: 'nonexistent-command' (choose from 'status', 'test', 'report', 'doctor', 'auth', 'repo', 'write-test', 'version', 'help')

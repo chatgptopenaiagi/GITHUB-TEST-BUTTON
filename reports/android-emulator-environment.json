@@ -1,0 +1,10 @@
+{
+  "serial": "emulator-5580",
+  "sdk": "37",
+  "android_release": "17",
+  "abi": "x86_64",
+  "model": "sdk_gphone64_x86_64",
+  "hardware": "ranchu",
+  "boot_completed": "1",
+  "physical_arm64_tested": false
+}

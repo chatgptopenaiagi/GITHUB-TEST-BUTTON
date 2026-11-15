@@ -1,0 +1,35 @@
+{
+  "inno_installer_signature": "Valid; Pyrsys B.V.",
+  "jdk": "21.0.8 Microsoft OpenJDK",
+  "inno_compiler_version": "7.1.1",
+  "timestamp": "2026-11-15T14:40:48.9018713Z",
+  "android_device": "No physical Android device connected",
+  "inno_source": "https://github.com/jrsoftware/issrc/releases/download/is-7_1_1/innosetup-7.1.1-x64.exe",
+  "tools": [
+    {
+      "version": null,
+      "bytes": 2024544,
+      "path": "C:\\Users\\LOVE\\AppData\\Local\\Android\\Sdk\\build-tools\\36.0.0\\aapt.exe",
+      "sha256": "c528418af0c5152650d9532485f371e8eed98e1436d1ab1a197580b97917b561"
+    },
+    {
+      "version": null,
+      "bytes": 3233,
+      "path": "C:\\Users\\LOVE\\AppData\\Local\\Android\\Sdk\\build-tools\\36.0.0\\apksigner.bat",
+      "sha256": "549dd0028b0314a5112d6b56e2de7800e713f297da4508b513a735546e52ce38"
+    },
+    {
+      "version": "21.0.8.0",
+      "bytes": 50224,
+      "path": "C:\\Program Files\\Android\\openjdk\\jdk-21.0.8\\bin\\java.exe",
+      "sha256": "a9604872170258865e88ef4a754744e8853dbce2161d4dc3ac5820fb449ab3ad"
+    },
+    {
+      "version": "0.0.0.0",
+      "bytes": 2136992,
+      "path": "C:\\xampp\\GITHUB-TEST-BUTTON\\.tools\\InnoSetup\\ISCC.exe",
+      "sha256": "e0f9f1dc32032650c6629f6dee41eb6d20ba140e4e3c07c25d8a24f9ba781644"
+    }
+  ],
+  "emulator": "GTB_API37 project-local x86_64 API37; boot in progress"
+}

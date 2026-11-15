@@ -1,0 +1,14 @@
+[
+  {
+    "path": "flutter\\lib\\main.dart",
+    "sha256": "76bad2cd0544fec09a3018ffeb71ea06aa1ed5c205dfdb4185c46b2ecfa5f11e"
+  },
+  {
+    "path": "flutter\\lib\\diagnostics\\core.dart",
+    "sha256": "b4a5f6b3559821e0c99de8bead5e8f7cbb558869dc050acd13dffd802e2716f3"
+  },
+  {
+    "path": "flutter\\lib\\diagnostics\\write_test.dart",
+    "sha256": "4c051a3ae2e6ed7815b251098ab3cf7fbb183a0a707874d7e3bd5b4f465b95c7"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-11-15T14:54:54.1496964Z",
+  "platform": "Windows 11 development host x64",
+  "gui_checks": [
+    {
+      "status": "PASS",
+      "name": "installed_gui_launch"
+    },
+    {
+      "status": "PASS",
+      "name": "main_connection_button_real_https_api"
+    },
+    {
+      "status": "PASS",
+      "name": "authenticated_identity_display"
+    },
+    {
+      "status": "PASS",
+      "name": "json_export_valid_real_results"
+    },
+    {
+      "status": "PASS",
+      "name": "txt_export_exists"
+    },
+    {
+      "status": "PASS",
+      "name": "light_mode"
+    },
+    {
+      "status": "PASS",
+      "name": "dark_mode"
+    },
+    {
+      "status": "PASS",
+      "name": "german_primary_interface"
+    },
+    {
+      "status": "PASS",
+      "name": "settings_persist_after_restart"
+    },
+    {
+      "status": "PASS",
+      "name": "history_persists"
+    }
+  ],
+  "gui_passed": 10,
+  "gui_failed": 0,
+  "installer_checks": [
+    "scoped_silent_install",
+    "start_menu_entry",
+    "complete_runtime_bundle",
+    "normal_uninstall_binary_and_shortcut_removed"
+  ],
+  "installer_passed": 4,
+  "installer_failed": 0,
+  "clean_machine_tested": false,
+  "repository_gui_entry": "NOT_VERIFIED: computer-use text insertion failed; core live repository and widget error paths verified separately",
+  "source_export": "windows-gui-export.json",
+  "screenshot": "assets/screenshots/windows-connected.png"
+}

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-11-15T14:50:15.5906775Z",
+  "python_version": "3.10.0",
+  "package_version": "0.1.0b1",
+  "wheel_tag": "py3-none-any",
+  "runtime_dependencies": [],
+  "unit_tests": 61,
+  "unit_failed": 0,
+  "wheel_acceptance_tests": 10,
+  "wheel_acceptance_failed": 0,
+  "installed_module": "python/.venv-verify/Lib/site-packages/github_test_button",
+  "build_environment": "python/.venv-build",
+  "verification_environment": "python/.venv-verify",
+  "artifacts": [
+    {
+      "file": "github_test_button-0.1.0b1-py3-none-any.whl",
+      "sha256": "8d2972f2763c35eb4fce23a1b11ff583f8c47fb3ed28781237c40f9ef539ce9f",
+      "bytes": 16481
+    },
+    {
+      "file": "github_test_button-0.1.0b1.tar.gz",
+      "sha256": "e9d710f04f073f44993735dbe578dafafce6218c8c9aa8ca546b096dcb51f8f5",
+      "bytes": 20576
+    }
+  ],
+  "limitations": [
+    "Windows 11 execution verified; Linux and macOS runtime not locally tested",
+    "New private repository mode covered by controlled fixtures, not an additional live remote creation",
+    "Initial HTTP 406 due to vendor Accept header was repaired; initial permissive acceptance was superseded by strict validation"
+  ]
+}

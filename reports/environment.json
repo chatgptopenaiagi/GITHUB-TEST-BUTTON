@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-11-15T14:40:29.1454617Z",
+  "tools": [
+    {
+      "path": "C:\\Program Files\\Git\\cmd\\git.exe",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "git"
+    },
+    {
+      "path": "C:\\Program Files\\GitHub CLI\\gh.exe",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "gh"
+    },
+    {
+      "path": "C:\\Users\\LOVE\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "python"
+    },
+    {
+      "path": "C:\\flutter\\bin\\flutter.bat",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "flutter"
+    },
+    {
+      "path": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "java"
+    },
+    {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "functional_verification": "NOT_TESTED",
+      "detected": true,
+      "name": "pwsh"
+    }
+  ],
+  "free_disk_bytes": 278899236864
+}

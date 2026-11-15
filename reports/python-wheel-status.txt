@@ -1,0 +1,21 @@
+GITHUB TEST BUTTON 0.1.0b1
+windows | 2026-11-15T14:49:02.263519Z
+
+network: CONNECTED — External TCP connectivity verified to 1.1.1.1:443
+dns.github.com: CONNECTED — DNS resolution verified
+dns.api.github.com: CONNECTED — DNS resolution verified
+dns.www.githubstatus.com: CONNECTED — DNS resolution verified
+github.https: CONNECTED — HTTPS request verified
+github.api: CONNECTED — HTTPS request verified
+github.public_account: CONNECTED — HTTPS request verified
+github.service: CONNECTED — All Systems Operational
+authentication: CONNECTED — Authenticated account identity verified
+github.rate_limit: CONNECTED — HTTPS request verified
+tool.git: CONNECTED — git version 2.56.0.windows.3
+tool.gh: CONNECTED — gh version 2.103.2 (2026-10-23)
+tool.codex: CONNECTED — codex-cli 0.169.0
+tool.pwsh: CONNECTED — PowerShell 7.6.9
+repository_write: NOT_TESTED — Use the separate explicitly confirmed write-test command
+
+Duration: 2844 ms
+CONNECTED verifies only the named operation. Write access is separate.

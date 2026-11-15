@@ -1,0 +1,15 @@
+{
+  "entry_count": 23,
+  "status": "PASS",
+  "required_entries": [
+    "github_test_button.exe",
+    "flutter_windows.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll",
+    "msvcp140.dll",
+    "data/icudtl.dat",
+    "data/app.so",
+    "data/flutter_assets/AssetManifest.bin"
+  ],
+  "checked_at": "2026-11-15T14:54:11.8430202Z"
+}

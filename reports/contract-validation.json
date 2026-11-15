@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-11-15T15:02:08.896436+00:00",
+  "schema": "contracts\\diagnostic-v1.schema.json",
+  "schema_sha256": "40a1c6202f859179d450e5bcaae1fb22609d03ed29de10b4c21cc0db3ac42843",
+  "validations": [
+    {
+      "report": "dart-live.json",
+      "schema_passed": true,
+      "errors": [],
+      "sha256": "d44763f106f265bf93f5ea7fa8ddd584a4c782adfaece2f39b2d8b7bbd694a39",
+      "timestamp": "2026-11-15T14:44:26.658982Z"
+    },
+    {
+      "report": "python-wheel-test.json",
+      "schema_passed": true,
+      "errors": [],
+      "sha256": "9c748da7ee8ecef9fc099fe2b5955ad079ca2984f9396b0fcfa019b4e5209fd1",
+      "timestamp": "2026-11-15T14:49:05.274206Z"
+    },
+    {
+      "report": "windows-gui-export.json",
+      "schema_passed": true,
+      "errors": [],
+      "sha256": "5832fcbeb4a5d970ec67e3ec0e6f22e7f59970c58d3a328f66e3405acc81a868",
+      "timestamp": "2026-11-15T14:50:46.606124Z"
+    },
+    {
+      "report": "android-live.json",
+      "schema_passed": true,
+      "errors": [],
+      "sha256": "f96f2cbf900cfe2a695c1da45626b8aed280f29588e67381a6068fd4b0092dfc",
+      "timestamp": "2026-11-15T14:56:58.763946Z"
+    }
+  ],
+  "classifications": [
+    {
+      "id": "dns.github.com",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "dns.api.github.com",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "dns.www.githubstatus.com",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "github.https",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "github.api",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "github.public_account",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "github.service",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "github.rate_limit",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "authentication",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "tool.git",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "tool.gh",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "tool.codex",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "tool.pwsh",
+      "dart": "CONNECTED",
+      "python": "CONNECTED",
+      "agrees": true
+    },
+    {
+      "id": "repository_write",
+      "dart": "NOT_TESTED",
+      "python": "NOT_TESTED",
+      "agrees": true
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "test-vectors.json",
+      "shared_sha256": "f28ffff0fca2fba3a0655245f6772d58840e5349e23d31f04badeb8bc2a4b88d",
+      "test_copy_sha256": "f28ffff0fca2fba3a0655245f6772d58840e5349e23d31f04badeb8bc2a4b88d",
+      "sdist_sha256": "f28ffff0fca2fba3a0655245f6772d58840e5349e23d31f04badeb8bc2a4b88d",
+      "all_match": true
+    },
+    {
+      "name": "diagnostic-v1.schema.json",
+      "shared_sha256": "40a1c6202f859179d450e5bcaae1fb22609d03ed29de10b4c21cc0db3ac42843",
+      "test_copy_sha256": "40a1c6202f859179d450e5bcaae1fb22609d03ed29de10b4c21cc0db3ac42843",
+      "sdist_sha256": "40a1c6202f859179d450e5bcaae1fb22609d03ed29de10b4c21cc0db3ac42843",
+      "all_match": true
+    },
+    {
+      "name": "status-codes.json",
+      "shared_sha256": "835be6fef42b40309dcdb64ec144dd1fc532ffc0225ae21711f41251b0ebb26e",
+      "test_copy_sha256": "835be6fef42b40309dcdb64ec144dd1fc532ffc0225ae21711f41251b0ebb26e",
+      "sdist_sha256": "835be6fef42b40309dcdb64ec144dd1fc532ffc0225ae21711f41251b0ebb26e",
+      "all_match": true
+    }
+  ],
+  "scope_difference": "network: Dart observes local interfaces (CONNECTED_WITH_LIMITATIONS); Python additionally verifies TCP to 1.1.1.1:443 (CONNECTED). This evidence scope differs and is not included in equivalent-operation comparisons.",
+  "passed": true
+}

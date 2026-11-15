@@ -1,0 +1,1 @@
+gtb: Write tests require --confirm and an explicit --repo or --new scope

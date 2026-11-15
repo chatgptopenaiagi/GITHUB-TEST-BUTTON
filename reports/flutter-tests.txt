@@ -1,0 +1,52 @@
+00:00 +0: loading C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart
+00:00 +0: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 200 {}
+00:00 +1: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 201 {}
+00:00 +2: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 401 {}
+00:00 +3: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 403 {}
+00:00 +4: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 403 {x-ratelimit-remaining: 0}
+00:00 +5: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 403 {retry-after: 60}
+00:00 +6: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 404 {}
+00:00 +7: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 429 {}
+00:00 +8: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 500 {}
+00:00 +9: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: HTTP contract 503 {}
+00:00 +10: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract dns
+00:00 +11: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract tls
+00:00 +12: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract timeout
+00:00 +13: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract network
+00:00 +14: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract malformed
+00:00 +15: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: Error contract unknown
+00:00 +16: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: secondary rate limit body
+00:00 +17: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: recursive secret redaction preserves JSON
+00:00 +18: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: timeout TLS DNS classification
+00:00 +19: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: write test requires confirmation without side effects
+00:00 +20: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: write state prerequisites enforced
+00:00 +21: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: mobile git writes unsupported
+00:00 +22: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: mobile missing tools never become connectivity failure
+00:00 +23: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: private repository 404 remains uncertain
+00:00 +24: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: repo rejects path traversal
+00:00 +25: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: read-only suite progress and genuine status rules
+00:00 +26: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: DNS failure is not silently connected
+00:00 +27: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: malformed account shape fails rather than passes
+00:00 +28: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server successful JSON response
+00:00 +29: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server malformed JSON response
+00:00 +30: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server authorization errors never retried
+00:00 +31: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server rate limits never retried
+00:00 +32: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server server failures bounded to one retry
+00:00 +33: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/core_test.dart: controlled local HTTP server timeouts bounded to one retry
+00:00 +34: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +35: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +36: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +37: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +38: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +39: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +40: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +41: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:00 +42: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 390.0
+00:02 +43: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 768.0
+00:02 +44: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: responsive layout 1280.0
+00:02 +45: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: button loading then measured status
+00:03 +46: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: light theme setting persists
+00:04 +47: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: dark theme setting persists
+00:04 +48: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: repository failure is shown
+00:05 +49: C:/xampp/GITHUB-TEST-BUTTON/flutter/test/widget_test.dart: reports controls render
+00:05 +50: All tests passed!

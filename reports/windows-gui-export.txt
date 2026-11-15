@@ -1,0 +1,350 @@
+GITHUB TEST BUTTON 0.1.0-beta.1
+2026-11-15T14:50:46.606124Z · windows · 4552ms
+
+network: CONNECTED_WITH_LIMITATIONS
+Network interface detected; internet reachability is tested separately.
+{"interface_count":5}
+
+dns.github.com: CONNECTED
+Host resolved.
+{"addresses":["20.250.119.67"]}
+
+dns.api.github.com: CONNECTED
+Host resolved.
+{"addresses":["20.250.119.72"]}
+
+dns.www.githubstatus.com: CONNECTED
+Host resolved.
+{"addresses":["99.84.91.92","99.84.91.85","99.84.91.111","99.84.91.63"]}
+
+github.https: CONNECTED
+HTTPS response 200
+{"url":"https://github.com","http_status":200,"headers":{"content-type":"text/html; charset=utf-8"},"retrieved_at":"2026-11-15T14:50:43.884205Z"}
+
+github.api: CONNECTED
+HTTPS response 200
+{"url":"https://api.github.com","http_status":200,"headers":{"x-ratelimit-limit":"60","x-ratelimit-reset":"1794755890","x-ratelimit-remaining":"38","x-ratelimit-used":"22","content-type":"application/json; charset=utf-8","x-ratelimit-resource":"core"},"retrieved_at":"2026-11-15T14:50:44.215829Z"}
+
+github.public_account: CONNECTED
+Public profile octocat is accessible; this does not authenticate you.
+{"url":"https://api.github.com/users/octocat","http_status":200,"headers":{"x-ratelimit-limit":"60","x-ratelimit-reset":"1794755890","x-ratelimit-remaining":"37","x-ratelimit-used":"23","content-type":"application/json; charset=utf-8","x-ratelimit-resource":"core"},"retrieved_at":"2026-11-15T14:50:44.535261Z","login":"octocat"}
+
+github.service: CONNECTED
+Published GitHub service status: All Systems Operational. Independent of your connection.
+{"url":"https://www.githubstatus.com/api/v2/summary.json","http_status":200,"headers":{"content-type":"application/json; charset=utf-8"},"retrieved_at":"2026-11-15T14:50:44.765656Z","published_status":{"indicator":"none","description":"All Systems Operational"},"incidents":[],"components":[{"name":"Git Operations","status":"operational"},{"name":"Webhooks","status":"operational"},{"name":"Visit www.githubstatus.com for more information","status":"operational"},{"name":"API Requests","status":"operational"},{"name":"Issues","status":"operational"},{"name":"Pull Requests","status":"operational"},{"name":"Actions","status":"operational"},{"name":"Packages","status":"operational"},{"name":"Pages","status":"operational"},{"name":"Copilot","status":"operational"},{"name":"Codespaces","status":"operational"},{"name":"Copilot AI Model Providers","status":"operational"}]}
+
+github.rate_limit: CONNECTED
+Public API rate limit retrieved. Authenticated limits appear in the account check.
+{"url":"https://api.github.com/rate_limit","http_status":200,"headers":{"x-ratelimit-limit":"60","x-ratelimit-reset":"1794755890","x-ratelimit-remaining":"37","content-type":"application/json; charset=utf-8","x-ratelimit-used":"23","x-ratelimit-resource":"core"},"retrieved_at":"2026-11-15T14:50:45.014668Z","rate":{"limit":60,"remaining":37,"reset":1794755890,"used":23}}
+
+authentication: CONNECTED
+Authenticated as chatgptopenaiagi
+{"login":"chatgptopenaiagi","html_url":"https://github.com/chatgptopenaiagi","avatar_url":"https://avatars.githubusercontent.com/u/207417324?v=4","public_repos":34,"provider":"GitHub CLI","http_status":200,"rate_limit":{"x-ratelimit-limit":"5000","x-ratelimit-remaining":"4940","x-ratelimit-reset":"1794755860","x-ratelimit-resource":"core","x-ratelimit-used":"60"}}
+
+tool.git: CONNECTED
+git version 2.56.0.windows.3
+{"path":"C:\\Program Files\\Git\\cmd\\git.exe","version_verified":true,"repository_operations_verified":false}
+
+tool.gh: CONNECTED
+gh version 2.103.2 (2026-10-23)
+{"path":"C:\\Program Files\\GitHub CLI\\gh.exe","version_verified":true,"repository_operations_verified":false}
+
+tool.codex: CONNECTED
+codex-cli 0.169.0
+{"path":"C:\\Users\\LOVE\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe","version_verified":true,"repository_operations_verified":false}
+
+tool.pwsh: CONNECTED
+PowerShell 7.6.9
+{"path":"C:\\Program Files\\PowerShell\\7\\pwsh.exe","version_verified":true,"repository_operations_verified":false}
+
+repository_write: NOT_TESTED
+Read-only diagnostics never create repositories or push commits.
+{}
+
+
+
+{
+  "application": "GITHUB TEST BUTTON",
+  "version": "0.1.0-beta.1",
+  "schema_version": "1.0",
+  "platform": "windows",
+  "timestamp": "2026-11-15T14:50:46.606124Z",
+  "duration_ms": 4552,
+  "checks": [
+    {
+      "id": "network",
+      "status": "CONNECTED_WITH_LIMITATIONS",
+      "message": "Network interface detected; internet reachability is tested separately.",
+      "duration_ms": 0,
+      "details": {
+        "interface_count": 5
+      }
+    },
+    {
+      "id": "dns.github.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 145,
+      "details": {
+        "addresses": [
+          "20.250.119.67"
+        ]
+      }
+    },
+    {
+      "id": "dns.api.github.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 62,
+      "details": {
+        "addresses": [
+          "20.250.119.72"
+        ]
+      }
+    },
+    {
+      "id": "dns.www.githubstatus.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 34,
+      "details": {
+        "addresses": [
+          "99.84.91.92",
+          "99.84.91.85",
+          "99.84.91.111",
+          "99.84.91.63"
+        ]
+      }
+    },
+    {
+      "id": "github.https",
+      "status": "CONNECTED",
+      "message": "HTTPS response 200",
+      "duration_ms": 1578,
+      "details": {
+        "url": "https://github.com",
+        "http_status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "retrieved_at": "2026-11-15T14:50:43.884205Z"
+      }
+    },
+    {
+      "id": "github.api",
+      "status": "CONNECTED",
+      "message": "HTTPS response 200",
+      "duration_ms": 331,
+      "details": {
+        "url": "https://api.github.com",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "38",
+          "x-ratelimit-used": "22",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:50:44.215829Z"
+      }
+    },
+    {
+      "id": "github.public_account",
+      "status": "CONNECTED",
+      "message": "Public profile octocat is accessible; this does not authenticate you.",
+      "duration_ms": 319,
+      "details": {
+        "url": "https://api.github.com/users/octocat",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "37",
+          "x-ratelimit-used": "23",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:50:44.535261Z",
+        "login": "octocat"
+      }
+    },
+    {
+      "id": "github.service",
+      "status": "CONNECTED",
+      "message": "Published GitHub service status: All Systems Operational. Independent of your connection.",
+      "duration_ms": 230,
+      "details": {
+        "url": "https://www.githubstatus.com/api/v2/summary.json",
+        "http_status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "retrieved_at": "2026-11-15T14:50:44.765656Z",
+        "published_status": {
+          "indicator": "none",
+          "description": "All Systems Operational"
+        },
+        "incidents": [],
+        "components": [
+          {
+            "name": "Git Operations",
+            "status": "operational"
+          },
+          {
+            "name": "Webhooks",
+            "status": "operational"
+          },
+          {
+            "name": "Visit www.githubstatus.com for more information",
+            "status": "operational"
+          },
+          {
+            "name": "API Requests",
+            "status": "operational"
+          },
+          {
+            "name": "Issues",
+            "status": "operational"
+          },
+          {
+            "name": "Pull Requests",
+            "status": "operational"
+          },
+          {
+            "name": "Actions",
+            "status": "operational"
+          },
+          {
+            "name": "Packages",
+            "status": "operational"
+          },
+          {
+            "name": "Pages",
+            "status": "operational"
+          },
+          {
+            "name": "Copilot",
+            "status": "operational"
+          },
+          {
+            "name": "Codespaces",
+            "status": "operational"
+          },
+          {
+            "name": "Copilot AI Model Providers",
+            "status": "operational"
+          }
+        ]
+      }
+    },
+    {
+      "id": "github.rate_limit",
+      "status": "CONNECTED",
+      "message": "Public API rate limit retrieved. Authenticated limits appear in the account check.",
+      "duration_ms": 248,
+      "details": {
+        "url": "https://api.github.com/rate_limit",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "37",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-used": "23",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:50:45.014668Z",
+        "rate": {
+          "limit": 60,
+          "remaining": 37,
+          "reset": 1794755890,
+          "used": 23
+        }
+      }
+    },
+    {
+      "id": "authentication",
+      "status": "CONNECTED",
+      "message": "Authenticated as chatgptopenaiagi",
+      "duration_ms": 0,
+      "details": {
+        "login": "chatgptopenaiagi",
+        "html_url": "https://github.com/chatgptopenaiagi",
+        "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+        "public_repos": 34,
+        "provider": "GitHub CLI",
+        "http_status": 200,
+        "rate_limit": {
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4940",
+          "x-ratelimit-reset": "1794755860",
+          "x-ratelimit-resource": "core",
+          "x-ratelimit-used": "60"
+        }
+      }
+    },
+    {
+      "id": "tool.git",
+      "status": "CONNECTED",
+      "message": "git version 2.56.0.windows.3",
+      "duration_ms": 221,
+      "details": {
+        "path": "C:\\Program Files\\Git\\cmd\\git.exe",
+        "version_verified": true,
+        "repository_operations_verified": false
+      }
+    },
+    {
+      "id": "tool.gh",
+      "status": "CONNECTED",
+      "message": "gh version 2.103.2 (2026-10-23)",
+      "duration_ms": 218,
+      "details": {
+        "path": "C:\\Program Files\\GitHub CLI\\gh.exe",
+        "version_verified": true,
+        "repository_operations_verified": false
+      }
+    },
+    {
+      "id": "tool.codex",
+      "status": "CONNECTED",
+      "message": "codex-cli 0.169.0",
+      "duration_ms": 241,
+      "details": {
+        "path": "C:\\Users\\LOVE\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.exe",
+        "version_verified": true,
+        "repository_operations_verified": false
+      }
+    },
+    {
+      "id": "tool.pwsh",
+      "status": "CONNECTED",
+      "message": "PowerShell 7.6.9",
+      "duration_ms": 341,
+      "details": {
+        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+        "version_verified": true,
+        "repository_operations_verified": false
+      }
+    },
+    {
+      "id": "repository_write",
+      "status": "NOT_TESTED",
+      "message": "Read-only diagnostics never create repositories or push commits.",
+      "duration_ms": 0,
+      "details": {}
+    }
+  ],
+  "account": {
+    "login": "chatgptopenaiagi",
+    "html_url": "https://github.com/chatgptopenaiagi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+    "public_repos": 34,
+    "provider": "GitHub CLI"
+  },
+  "overall": "CONNECTED",
+  "repository_write": {
+    "status": "NOT_TESTED"
+  }
+}

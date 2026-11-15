@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-15T14:57:47.0632904Z",
+  "signature": "PASS",
+  "target_api": 36,
+  "universal_abis": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "certificate_sha256": "423e51524b6893ca275468e089f4a3d68cd94d1d0f55d8f66da6d521cf3182ae",
+  "runtime_evidence": "reports/android-runtime.json",
+  "version": "0.1.0-beta.1",
+  "physical_arm64_runtime": "NOT_TESTED",
+  "build": "PASS",
+  "arm64_abis": [
+    "arm64-v8a"
+  ],
+  "minimum_api": 24,
+  "artifacts": [
+    {
+      "name": "GTB-Android-arm64.apk",
+      "path": "dist/android/GTB-Android-arm64.apk",
+      "bytes": 18412509,
+      "sha256": "fa2c52284eace24a863959d68912a7efd00fa22c6353272d51a3d82d2f6a4370"
+    },
+    {
+      "name": "GTB-Android-universal.apk",
+      "path": "dist/android/GTB-Android-universal.apk",
+      "bytes": 52426823,
+      "sha256": "ac939a2471e96378ba142e45458be5e58ae2a957e4faa371e11050493017e386"
+    }
+  ],
+  "package": "dev.gtb.github_test_button",
+  "repaired_attempts": 3,
+  "metadata": "PASS",
+  "signing": "Release key RSA4096, APK Signature Scheme v2"
+}

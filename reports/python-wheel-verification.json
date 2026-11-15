@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-11-15T14:49:09.576255+00:00",
+  "platform": "nt",
+  "tests_run": 10,
+  "passed": 10,
+  "failed": 0,
+  "remote_write_performed": false,
+  "checks": [
+    {
+      "name": "isolated_import",
+      "exit_code": 0,
+      "passed": true,
+      "installed_module": "C:\\xampp\\GITHUB-TEST-BUTTON\\python\\.venv-verify\\lib\\site-packages\\github_test_button\\__init__.py"
+    },
+    {
+      "name": "help",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-help.txt"
+    },
+    {
+      "name": "version",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-version.txt"
+    },
+    {
+      "name": "status",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-status.txt"
+    },
+    {
+      "name": "test",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-test.json"
+    },
+    {
+      "name": "auth",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-auth.json"
+    },
+    {
+      "name": "repository",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-repository.json"
+    },
+    {
+      "name": "doctor",
+      "exit_code": 0,
+      "passed": true,
+      "evidence": "python-wheel-doctor.json"
+    },
+    {
+      "name": "invalid",
+      "exit_code": 4,
+      "passed": true,
+      "evidence": "python-wheel-invalid.txt"
+    },
+    {
+      "name": "write_requires_confirmation",
+      "exit_code": 4,
+      "passed": true,
+      "evidence": "python-wheel-write_requires_confirmation.txt"
+    }
+  ]
+}

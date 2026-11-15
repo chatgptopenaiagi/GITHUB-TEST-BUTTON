@@ -1,0 +1,5 @@
+{
+  "checked_text_files": 163,
+  "findings": [],
+  "scope": "Tracked and nonignored source text; synthetic test fixtures excluded. Pattern scan is not a security audit."
+}

@@ -1,0 +1,335 @@
+{
+  "application": "GITHUB TEST BUTTON",
+  "version": "0.1.0-beta.1",
+  "schema_version": "1.0",
+  "platform": "android",
+  "timestamp": "2026-11-15T14:56:58.763946Z",
+  "duration_ms": 5024,
+  "checks": [
+    {
+      "id": "network",
+      "status": "CONNECTED_WITH_LIMITATIONS",
+      "message": "Network interface detected; internet reachability is tested separately.",
+      "duration_ms": 0,
+      "details": {
+        "interface_count": 2
+      }
+    },
+    {
+      "id": "dns.github.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 390,
+      "details": {
+        "addresses": [
+          "20.250.119.67"
+        ]
+      }
+    },
+    {
+      "id": "dns.api.github.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 420,
+      "details": {
+        "addresses": [
+          "20.250.119.72"
+        ]
+      }
+    },
+    {
+      "id": "dns.www.githubstatus.com",
+      "status": "CONNECTED",
+      "message": "Host resolved.",
+      "duration_ms": 225,
+      "details": {
+        "addresses": [
+          "99.84.91.85",
+          "99.84.91.63",
+          "99.84.91.92",
+          "99.84.91.111"
+        ]
+      }
+    },
+    {
+      "id": "github.https",
+      "status": "CONNECTED",
+      "message": "HTTPS response 200",
+      "duration_ms": 1659,
+      "details": {
+        "url": "https://github.com",
+        "http_status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8"
+        },
+        "retrieved_at": "2026-11-15T14:56:56.452152Z"
+      }
+    },
+    {
+      "id": "github.api",
+      "status": "CONNECTED",
+      "message": "HTTPS response 200",
+      "duration_ms": 873,
+      "details": {
+        "url": "https://api.github.com",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "36",
+          "x-ratelimit-used": "24",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:56:57.325611Z"
+      }
+    },
+    {
+      "id": "github.public_account",
+      "status": "CONNECTED",
+      "message": "Public profile octocat is accessible; this does not authenticate you.",
+      "duration_ms": 641,
+      "details": {
+        "url": "https://api.github.com/users/octocat",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "35",
+          "x-ratelimit-used": "25",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:56:57.967220Z",
+        "login": "octocat"
+      }
+    },
+    {
+      "id": "github.service",
+      "status": "CONNECTED",
+      "message": "Published GitHub service status: All Systems Operational. Independent of your connection.",
+      "duration_ms": 377,
+      "details": {
+        "url": "https://www.githubstatus.com/api/v2/summary.json",
+        "http_status": 200,
+        "headers": {
+          "content-type": "application/json; charset=utf-8"
+        },
+        "retrieved_at": "2026-11-15T14:56:58.345085Z",
+        "published_status": {
+          "indicator": "none",
+          "description": "All Systems Operational"
+        },
+        "incidents": [],
+        "components": [
+          {
+            "name": "Git Operations",
+            "status": "operational"
+          },
+          {
+            "name": "Webhooks",
+            "status": "operational"
+          },
+          {
+            "name": "Visit www.githubstatus.com for more information",
+            "status": "operational"
+          },
+          {
+            "name": "API Requests",
+            "status": "operational"
+          },
+          {
+            "name": "Issues",
+            "status": "operational"
+          },
+          {
+            "name": "Pull Requests",
+            "status": "operational"
+          },
+          {
+            "name": "Actions",
+            "status": "operational"
+          },
+          {
+            "name": "Packages",
+            "status": "operational"
+          },
+          {
+            "name": "Pages",
+            "status": "operational"
+          },
+          {
+            "name": "Copilot",
+            "status": "operational"
+          },
+          {
+            "name": "Codespaces",
+            "status": "operational"
+          },
+          {
+            "name": "Copilot AI Model Providers",
+            "status": "operational"
+          }
+        ]
+      }
+    },
+    {
+      "id": "github.rate_limit",
+      "status": "CONNECTED",
+      "message": "Public API rate limit retrieved. Authenticated limits appear in the account check.",
+      "duration_ms": 418,
+      "details": {
+        "url": "https://api.github.com/rate_limit",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-reset": "1794755890",
+          "x-ratelimit-remaining": "35",
+          "content-type": "application/json; charset=utf-8",
+          "x-ratelimit-used": "25",
+          "x-ratelimit-resource": "core"
+        },
+        "retrieved_at": "2026-11-15T14:56:58.763835Z",
+        "rate": {
+          "limit": 60,
+          "remaining": 35,
+          "reset": 1794755890,
+          "used": 25
+        }
+      }
+    },
+    {
+      "id": "authentication",
+      "status": "UNAUTHENTICATED",
+      "message": "Public diagnostics available. Mobile sign-in awaits a registered OAuth application and secure exchange service. No PC credentials are used.",
+      "duration_ms": 0,
+      "details": {}
+    },
+    {
+      "id": "tool.git",
+      "status": "UNSUPPORTED_ON_PLATFORM",
+      "message": "Not required for Android public diagnostics.",
+      "duration_ms": 0,
+      "details": {}
+    },
+    {
+      "id": "tool.gh",
+      "status": "UNSUPPORTED_ON_PLATFORM",
+      "message": "Not required for Android public diagnostics.",
+      "duration_ms": 0,
+      "details": {}
+    },
+    {
+      "id": "tool.codex",
+      "status": "UNSUPPORTED_ON_PLATFORM",
+      "message": "Not required for Android public diagnostics.",
+      "duration_ms": 0,
+      "details": {}
+    },
+    {
+      "id": "tool.pwsh",
+      "status": "UNSUPPORTED_ON_PLATFORM",
+      "message": "Not required for Android public diagnostics.",
+      "duration_ms": 0,
+      "details": {}
+    },
+    {
+      "id": "repository_write",
+      "status": "NOT_TESTED",
+      "message": "Read-only diagnostics never create repositories or push commits.",
+      "duration_ms": 0,
+      "details": {}
+    }
+  ],
+  "account": null,
+  "overall": "CONNECTED",
+  "repository_write": {
+    "status": "NOT_TESTED"
+  },
+  "repository": {
+    "id": "repository",
+    "status": "CONNECTED",
+    "message": "Repository metadata read successfully. Advertised permissions are not write verification.",
+    "duration_ms": 3212,
+    "details": {
+      "full_name": "chatgptopenaiagi/GITHUB-TEST-BUTTON",
+      "description": "One button to understand GitHub connectivity. Flutter Windows/Android and an independent Python CLI.",
+      "html_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON",
+      "clone_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON.git",
+      "visibility": "public",
+      "private": false,
+      "default_branch": "main",
+      "permissions": null,
+      "read_verified": true,
+      "write_verified": false,
+      "files_status": "CONNECTED",
+      "files": [
+        {
+          "name": ".github",
+          "type": "dir"
+        },
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "type": "file"
+        },
+        {
+          "name": "CONTRIBUTING.md",
+          "type": "file"
+        },
+        {
+          "name": "README.md",
+          "type": "file"
+        },
+        {
+          "name": "SECURITY.md",
+          "type": "file"
+        },
+        {
+          "name": "assets",
+          "type": "dir"
+        },
+        {
+          "name": "contracts",
+          "type": "dir"
+        },
+        {
+          "name": "docs",
+          "type": "dir"
+        },
+        {
+          "name": "flutter",
+          "type": "dir"
+        },
+        {
+          "name": "github-readiness.json",
+          "type": "file"
+        },
+        {
+          "name": "installer",
+          "type": "dir"
+        },
+        {
+          "name": "python",
+          "type": "dir"
+        },
+        {
+          "name": "scripts",
+          "type": "dir"
+        }
+      ],
+      "latest_commit_status": "CONNECTED",
+      "latest_commit": [
+        {
+          "sha": "a1ee1d8428e1cc2159795078a977942442bffeac",
+          "html_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/commit/a1ee1d8428e1cc2159795078a977942442bffeac"
+        }
+      ],
+      "releases_status": "CONNECTED",
+      "releases": []
+    }
+  }
+}

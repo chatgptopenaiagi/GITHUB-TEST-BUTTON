@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-11-15T14:48:37.5576176Z",
+  "platform": "Windows host",
+  "suite": "Flutter",
+  "total": 50,
+  "passed": 50,
+  "failed": 0,
+  "core_contract_network_write_tests": 42,
+  "widget_tests": 8,
+  "widget_viewports": [
+    "390x844",
+    "768x1024",
+    "1280x900"
+  ],
+  "static_analysis": "No issues found",
+  "evidence": [
+    "reports/flutter-tests.log",
+    "reports/flutter-write-tests.log",
+    "reports/flutter-analyze.log"
+  ],
+  "limitations": [
+    "Widget tests do not establish native device launch.",
+    "Technical diagnostic messages remain English; main controls support English, Romanian and German.",
+    "Mobile authentication awaits registration and secure exchange architecture.",
+    "Desktop write workflow requires Git and GitHub CLI; Android write workflow is explicitly unsupported."
+  ]
+}

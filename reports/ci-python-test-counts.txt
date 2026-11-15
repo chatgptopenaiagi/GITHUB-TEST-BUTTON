@@ -1,0 +1,8 @@
+python (windows-latest, 3.10)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:50.9952495Z Ran 61 tests in 0.961s
+python (windows-latest, 3.10)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:50.9952792Z OK
+python (windows-latest, 3.13)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:27.8764248Z Ran 61 tests in 1.516s
+python (windows-latest, 3.13)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:27.8764380Z OK
+python (ubuntu-latest, 3.10)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:19.9620285Z Ran 61 tests in 0.813s
+python (ubuntu-latest, 3.10)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:19.9620561Z OK
+python (ubuntu-latest, 3.13)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:13.7070330Z Ran 61 tests in 0.822s
+python (ubuntu-latest, 3.13)	Run python -m unittest discover -s python/tests -v	2026-11-15T14:57:13.7070792Z OK

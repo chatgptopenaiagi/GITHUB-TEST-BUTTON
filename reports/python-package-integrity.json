@@ -1,0 +1,70 @@
+{
+  "source_head": "a1ee1d8428e1cc2159795078a977942442bffeac",
+  "wheel_sha256": "8d2972f2763c35eb4fce23a1b11ff583f8c47fb3ed28781237c40f9ef539ce9f",
+  "wheel_bytes": 16481,
+  "test_methods": 61,
+  "package_files": [
+    {
+      "file": "__init__.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "194b1592b32fb9dc2d1dcadf4d5ae8917e912280569f87fd21a87f222d162421"
+    },
+    {
+      "file": "authentication.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "c4fe2d70175a30d96b05a0e24c632679fb4518a16d751bb80efb4de725ea27a8"
+    },
+    {
+      "file": "cli.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "3d8af3dc3b9405bf7582a19fff38e2cf0aa03668a016b4f46c9c0ee8e61c2d56"
+    },
+    {
+      "file": "diagnostics.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "b9bdc2ba06817a5e9e91a254425289a7030f8288065fc740355249a6126955e1"
+    },
+    {
+      "file": "git_tools.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "f61f66453692ef8b36d24a1138185fa9dff4a363857ef99bdc90f02371471b66"
+    },
+    {
+      "file": "github_api.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "5909a553dc2af906dbf4e6ad7ac5b252acca078f0884062e0d49a5fa62440660"
+    },
+    {
+      "file": "models.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "23203fd7d6d96c193259d27f45026a44422b9cb71e33d4ff60ffacafb3c1d145"
+    },
+    {
+      "file": "reporting.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "a65d4fb3cf4440574c6ff573361911431475763c08d2de70198375d1e3394ce7"
+    },
+    {
+      "file": "repository.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "0753c7c5657ccbd5860e440d275f568e94d748b5c66610cf3c1f1726876af2cb"
+    },
+    {
+      "file": "utilities.py",
+      "archive_source_match": true,
+      "installed_source_match": true,
+      "sha256": "29708b467e13b6a70cc8c991a035efbe2b596938535a05eff1e574a0bd536e76"
+    }
+  ],
+  "tracked_private_material": [],
+  "passed": true
+}

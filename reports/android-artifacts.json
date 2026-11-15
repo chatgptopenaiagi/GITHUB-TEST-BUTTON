@@ -1,0 +1,14 @@
+[
+  {
+    "name": "GTB-Android-arm64.apk",
+    "path": "dist/android/GTB-Android-arm64.apk",
+    "bytes": 18412509,
+    "sha256": "fa2c52284eace24a863959d68912a7efd00fa22c6353272d51a3d82d2f6a4370"
+  },
+  {
+    "name": "GTB-Android-universal.apk",
+    "path": "dist/android/GTB-Android-universal.apk",
+    "bytes": 52426823,
+    "sha256": "ac939a2471e96378ba142e45458be5e58ae2a957e4faa371e11050493017e386"
+  }
+]

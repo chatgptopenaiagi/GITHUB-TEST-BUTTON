@@ -1,0 +1,28 @@
+{
+  "authenticode": "UNSIGNED",
+  "installer": "Inno Setup7.1.1 per-user",
+  "source_hashes": "reports/flutter-build-source-hashes.json",
+  "historical_failures": [
+    "Final compilation succeeded but first packaging attempt hit a GTB GUI DLL file lock. Retried after closing GTB and final packaging passed."
+  ],
+  "artifacts": [
+    {
+      "name": "GTB-Windows-Setup.exe",
+      "path": "dist\\windows\\GTB-Windows-Setup.exe",
+      "bytes": 11076316,
+      "sha256": "9aa109913557d9612e4b772fe4336b238b59f4721bbb794c53a883ebe56def6d"
+    },
+    {
+      "name": "GTB-Windows-Portable.zip",
+      "path": "dist\\windows\\GTB-Windows-Portable.zip",
+      "bytes": 12999041,
+      "sha256": "c9c3e53267003f4d24ec601e30a77d2d5302c586024dc5398381ee4ebb0cf2c5"
+    }
+  ],
+  "package": "PASS",
+  "compile": "PASS",
+  "flutter": "3.47.8",
+  "dart": "3.13.7",
+  "timestamp": "2026-11-15T14:49:57.9382503Z",
+  "platform": "windows-x64"
+}

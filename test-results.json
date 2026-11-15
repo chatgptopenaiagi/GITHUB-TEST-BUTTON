@@ -1,0 +1,18 @@
+{
+  "mission": "GTB-001",
+  "timestamp": "2026-11-15T15:02:08.9997058Z",
+  "python_unit_tests": 61,
+  "flutter_tests": 50,
+  "local_automated_distinct_tests": 111,
+  "local_automated_failed": 0,
+  "windows_gui_checks": 10,
+  "windows_installer_checks": 4,
+  "android_runtime_checks": 12,
+  "python_wheel_acceptance": 10,
+  "contract_live_schemas": 4,
+  "remote_write_and_independent_readback": "PASS",
+  "failed_current_tests": 0,
+  "historical_failures_preserved": true,
+  "unresolved_issue_groups": 8,
+  "classification": "GTB BETA READY WITH LIMITATIONS"
+}

@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=GITHUB TEST BUTTON, OU=GTB, O=GTB contributors
+Signer #1 certificate SHA-256 digest: 423e51524b6893ca275468e089f4a3d68cd94d1d0f55d8f66da6d521cf3182ae
+Signer #1 certificate SHA-1 digest: a6921aa5d2f4a8048a18cc9880601c66fe5e9c4a
+Signer #1 certificate MD5 digest: 64a125db72480b35b008cf1aeff6fac9
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 4096
+Signer #1 public key SHA-256 digest: 7605384ef3831b21a92fe40d749214bf8ee43e150e1f40f7db127d87f6c27539
+Signer #1 public key SHA-1 digest: 221b9d973ec2c00bdc1340309a88dbb7d573c805
+Signer #1 public key MD5 digest: 0c566e1d27841427c5882d7e3f73e993

@@ -6,6 +6,14 @@ GTB is a Windows and Android diagnostic application with an independent Python c
 
 Initial engineering version: **0.1.0-beta.1**. Consult [build verification](docs/BUILD-VERIFICATION.md) and [known limitations](reports/KNOWN-LIMITATIONS.md) for the evidence boundary of this release.
 
+![Installed Windows GTB performing real GitHub diagnostics](assets/screenshots/windows-connected.png)
+
+Actual Windows installer build, tested on the development computer. Account identity shown is the test publisher; installations detect their own user.
+
+<img src="assets/screenshots/android-connected.png" alt="Actual Android emulator running GTB public diagnostics" width="320">
+
+Android screenshot: signed universal APK on an API37 x86_64 emulator. Physical ARM64 testing remains pending.
+
 ## Downloads
 
 Download packaged builds from [GitHub Releases](https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases). Verify downloads against the release's `SHA256SUMS.txt`.

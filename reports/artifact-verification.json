@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-11-15T14:57:47.1181553Z",
+  "status": "PASS",
+  "checks": [
+    "Windows PE magic",
+    "Portable runtime entries",
+    "Wheel metadata, universal tag and CLI entry",
+    "ARM64-only APK native libraries",
+    "APK package identity",
+    "INTERNET permission",
+    "APK signature",
+    "nonempty mandatory artifacts",
+    "SHA256 generation"
+  ]
+}

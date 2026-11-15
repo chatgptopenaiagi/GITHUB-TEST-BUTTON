@@ -1,0 +1,11 @@
+usage: gtb [-h]
+           {status,test,report,doctor,auth,repo,write-test,version,help} ...
+
+GITHUB TEST BUTTON — public diagnostics are read-only; writes require explicit
+scope and confirmation.
+
+positional arguments:
+  {status,test,report,doctor,auth,repo,write-test,version,help}
+
+options:
+  -h, --help            show this help message and exit

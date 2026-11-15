@@ -1,0 +1,490 @@
+{
+  "application": "GITHUB TEST BUTTON",
+  "version": "0.1.0b1",
+  "schema_version": "1.0",
+  "platform": "windows",
+  "timestamp": "2026-11-15T14:44:48.492498Z",
+  "duration_ms": 3719.0,
+  "checks": [
+    {
+      "id": "network",
+      "status": "CONNECTED",
+      "message": "External TCP connectivity verified to 1.1.1.1:443",
+      "duration_ms": 188.0000000091968,
+      "details": {}
+    },
+    {
+      "id": "dns.github.com",
+      "status": "CONNECTED",
+      "message": "DNS resolution verified",
+      "duration_ms": 0.0,
+      "details": {
+        "addresses": [
+          "20.208.89.80"
+        ]
+      }
+    },
+    {
+      "id": "dns.api.github.com",
+      "status": "CONNECTED",
+      "message": "DNS resolution verified",
+      "duration_ms": 61.99999999080319,
+      "details": {
+        "addresses": [
+          "20.250.119.72"
+        ]
+      }
+    },
+    {
+      "id": "dns.www.githubstatus.com",
+      "status": "CONNECTED",
+      "message": "DNS resolution verified",
+      "duration_ms": 0.0,
+      "details": {
+        "addresses": [
+          "99.84.91.111",
+          "99.84.91.63",
+          "99.84.91.85",
+          "99.84.91.92"
+        ]
+      }
+    },
+    {
+      "id": "github.https",
+      "status": "UNKNOWN_ERROR",
+      "message": "HTTP 406",
+      "duration_ms": 266.0,
+      "details": {
+        "url": "https://github.com",
+        "http_status": 406,
+        "headers": {},
+        "attempts": 1
+      }
+    },
+    {
+      "id": "github.api",
+      "status": "CONNECTED",
+      "message": "HTTPS request verified",
+      "duration_ms": 203.0,
+      "details": {
+        "url": "https://api.github.com/",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-remaining": "54",
+          "x-ratelimit-resource": "core",
+          "x-ratelimit-reset": "1794755890"
+        },
+        "attempts": 1
+      }
+    },
+    {
+      "id": "github.public_account",
+      "status": "CONNECTED",
+      "message": "HTTPS request verified",
+      "duration_ms": 172.0,
+      "details": {
+        "url": "https://api.github.com/users/octocat",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "60",
+          "x-ratelimit-remaining": "53",
+          "x-ratelimit-resource": "core",
+          "x-ratelimit-reset": "1794755890"
+        },
+        "attempts": 1,
+        "login": "octocat"
+      }
+    },
+    {
+      "id": "github.service",
+      "status": "CONNECTED",
+      "message": "All Systems Operational",
+      "duration_ms": 172.0,
+      "details": {
+        "url": "https://www.githubstatus.com/api/v2/summary.json",
+        "http_status": 200,
+        "headers": {},
+        "attempts": 1,
+        "published_status": {
+          "indicator": "none",
+          "description": "All Systems Operational"
+        },
+        "incidents": [],
+        "components": [
+          {
+            "id": "8l4ygp009s5s",
+            "name": "Git Operations",
+            "status": "operational",
+            "created_at": "2017-01-31T20:05:05.370Z",
+            "updated_at": "2026-11-04T11:30:42.148Z",
+            "position": 1,
+            "description": "Performance of git clones, pulls, pushes, and associated operations",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "4230lsnqdsld",
+            "name": "Webhooks",
+            "status": "operational",
+            "created_at": "2019-11-13T18:00:24.256Z",
+            "updated_at": "2026-11-12T19:20:14.124Z",
+            "position": 2,
+            "description": "Real time HTTP callbacks of user-generated and system events",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "0l2p9nhqnxpd",
+            "name": "Visit www.githubstatus.com for more information",
+            "status": "operational",
+            "created_at": "2018-12-05T19:39:40.838Z",
+            "updated_at": "2025-03-19T05:00:21.309Z",
+            "position": 3,
+            "description": null,
+            "showcase": false,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "brv1bkgrwx7q",
+            "name": "API Requests",
+            "status": "operational",
+            "created_at": "2017-01-31T20:01:46.621Z",
+            "updated_at": "2026-11-08T11:56:20.652Z",
+            "position": 4,
+            "description": "Requests for GitHub APIs",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "kr09ddfgbfsf",
+            "name": "Issues",
+            "status": "operational",
+            "created_at": "2017-01-31T20:01:46.638Z",
+            "updated_at": "2026-11-06T00:06:11.679Z",
+            "position": 5,
+            "description": "Requests for Issues on GitHub.com",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "hhtssxt0f5v2",
+            "name": "Pull Requests",
+            "status": "operational",
+            "created_at": "2020-09-02T15:39:06.329Z",
+            "updated_at": "2026-11-13T17:28:01.391Z",
+            "position": 6,
+            "description": "Requests for Pull Requests on GitHub.com",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "br0l2tvcx85d",
+            "name": "Actions",
+            "status": "operational",
+            "created_at": "2019-11-13T18:02:19.432Z",
+            "updated_at": "2026-11-11T21:07:24.537Z",
+            "position": 7,
+            "description": "Workflows, Compute and Orchestration for GitHub Actions",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "st3j38cctv9l",
+            "name": "Packages",
+            "status": "operational",
+            "created_at": "2019-11-13T18:02:40.064Z",
+            "updated_at": "2026-10-22T17:41:38.649Z",
+            "position": 8,
+            "description": "API requests and webhook delivery for GitHub Packages",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "vg70hn9s2tyj",
+            "name": "Pages",
+            "status": "operational",
+            "created_at": "2017-01-31T20:04:33.923Z",
+            "updated_at": "2026-11-11T21:07:24.569Z",
+            "position": 9,
+            "description": "Frontend application and API servers for Pages builds",
+            "showcase": true,
+            "start_date": null,
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "pjmpxvq2cmr2",
+            "name": "Copilot",
+            "status": "operational",
+            "created_at": "2022-06-21T16:04:33.017Z",
+            "updated_at": "2026-11-11T21:07:24.597Z",
+            "position": 10,
+            "description": null,
+            "showcase": true,
+            "start_date": "2022-06-21",
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "h2ftsgbw7kmk",
+            "name": "Codespaces",
+            "status": "operational",
+            "created_at": "2021-08-11T16:02:09.505Z",
+            "updated_at": "2026-07-14T09:51:08.862Z",
+            "position": 11,
+            "description": "Orchestration and Compute for GitHub Codespaces",
+            "showcase": true,
+            "start_date": "2021-08-11",
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          },
+          {
+            "id": "cnnb39dkkk82",
+            "name": "Copilot AI Model Providers",
+            "status": "operational",
+            "created_at": "2026-04-17T12:33:08.827Z",
+            "updated_at": "2026-11-13T21:27:58.989Z",
+            "position": 12,
+            "description": null,
+            "showcase": true,
+            "start_date": "2026-04-17",
+            "group_id": null,
+            "page_id": "kctbh9vrtdwd",
+            "group": false,
+            "only_show_if_degraded": false
+          }
+        ],
+        "retrieved_at": "2026-11-15T14:44:45.869061Z"
+      }
+    },
+    {
+      "id": "authentication",
+      "status": "CONNECTED",
+      "message": "Authenticated account identity verified",
+      "duration_ms": 438.0,
+      "details": {
+        "url": "https://api.github.com/user",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4982",
+          "x-ratelimit-reset": "1794755860",
+          "x-ratelimit-resource": "core"
+        },
+        "attempts": 1,
+        "provider": "GitHub CLI credential store",
+        "account": {
+          "login": "chatgptopenaiagi",
+          "html_url": "https://github.com/chatgptopenaiagi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+          "public_repos": 34,
+          "followers": 3
+        }
+      }
+    },
+    {
+      "id": "github.rate_limit",
+      "status": "CONNECTED",
+      "message": "HTTPS request verified",
+      "duration_ms": 1437.0,
+      "details": {
+        "url": "https://api.github.com/rate_limit",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4981",
+          "x-ratelimit-reset": "1794755861",
+          "x-ratelimit-resource": "core"
+        },
+        "attempts": 1,
+        "resources": {
+          "core": {
+            "limit": 5000,
+            "used": 19,
+            "remaining": 4981,
+            "reset": 1794755861
+          },
+          "search": {
+            "limit": 30,
+            "used": 0,
+            "remaining": 30,
+            "reset": 1794753947
+          },
+          "graphql": {
+            "limit": 5000,
+            "used": 2,
+            "remaining": 4998,
+            "reset": 1794755506
+          },
+          "integration_manifest": {
+            "limit": 5000,
+            "used": 0,
+            "remaining": 5000,
+            "reset": 1794757487
+          },
+          "source_import": {
+            "limit": 100,
+            "used": 0,
+            "remaining": 100,
+            "reset": 1794753947
+          },
+          "code_scanning_autofix": {
+            "limit": 10,
+            "used": 0,
+            "remaining": 10,
+            "reset": 1794753947
+          },
+          "actions_runner_registration": {
+            "limit": 10000,
+            "used": 0,
+            "remaining": 10000,
+            "reset": 1794757487
+          },
+          "scim": {
+            "limit": 15000,
+            "used": 0,
+            "remaining": 15000,
+            "reset": 1794757487
+          },
+          "dependency_snapshots": {
+            "limit": 100,
+            "used": 0,
+            "remaining": 100,
+            "reset": 1794753947
+          },
+          "dependency_sbom": {
+            "limit": 100,
+            "used": 0,
+            "remaining": 100,
+            "reset": 1794753947
+          },
+          "audit_log": {
+            "limit": 1750,
+            "used": 0,
+            "remaining": 1750,
+            "reset": 1794757487
+          },
+          "audit_log_streaming": {
+            "limit": 15,
+            "used": 0,
+            "remaining": 15,
+            "reset": 1794757487
+          },
+          "code_search": {
+            "limit": 10,
+            "used": 0,
+            "remaining": 10,
+            "reset": 1794753947
+          },
+          "copilot_usage_records": {
+            "limit": 1750,
+            "used": 0,
+            "remaining": 1750,
+            "reset": 1794757487
+          },
+          "enterprise_token_inventory": "[REDACTED]"
+        }
+      }
+    },
+    {
+      "id": "tool.git",
+      "status": "CONNECTED",
+      "message": "git version 2.56.0.windows.3",
+      "duration_ms": 78.00000000861473,
+      "details": {
+        "path": "C:\\Program Files\\Git\\cmd\\git.EXE",
+        "detected": true,
+        "verified": true
+      }
+    },
+    {
+      "id": "tool.gh",
+      "status": "CONNECTED",
+      "message": "gh version 2.103.2 (2026-10-23)",
+      "duration_ms": 108.99999999674037,
+      "details": {
+        "path": "C:\\Program Files\\GitHub CLI\\gh.EXE",
+        "detected": true,
+        "verified": true
+      }
+    },
+    {
+      "id": "tool.codex",
+      "status": "CONNECTED",
+      "message": "codex-cli 0.169.0",
+      "duration_ms": 78.00000000861473,
+      "details": {
+        "path": "C:\\Users\\LOVE\\AppData\\Local\\Programs\\OpenAI\\Codex\\bin\\codex.EXE",
+        "detected": true,
+        "verified": true
+      }
+    },
+    {
+      "id": "tool.pwsh",
+      "status": "CONNECTED",
+      "message": "PowerShell 7.6.9",
+      "duration_ms": 266.00000000325963,
+      "details": {
+        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.EXE",
+        "detected": true,
+        "verified": true
+      }
+    },
+    {
+      "id": "repository_write",
+      "status": "NOT_TESTED",
+      "message": "Use the separate explicitly confirmed write-test command",
+      "duration_ms": 0,
+      "details": {}
+    }
+  ],
+  "repository_write": {
+    "status": "NOT_TESTED"
+  },
+  "account": {
+    "login": "chatgptopenaiagi",
+    "html_url": "https://github.com/chatgptopenaiagi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+    "public_repos": 34,
+    "followers": 3
+  }
+}

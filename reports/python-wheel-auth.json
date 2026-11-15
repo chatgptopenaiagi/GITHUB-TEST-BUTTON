@@ -1,0 +1,45 @@
+{
+  "application": "GITHUB TEST BUTTON",
+  "version": "0.1.0b1",
+  "schema_version": "1.0",
+  "platform": "windows",
+  "timestamp": "2026-11-15T14:49:06.076489Z",
+  "duration_ms": 0,
+  "checks": [
+    {
+      "id": "authentication",
+      "status": "CONNECTED",
+      "message": "Authenticated account identity verified",
+      "duration_ms": 422.0,
+      "details": {
+        "url": "https://api.github.com/user",
+        "http_status": 200,
+        "headers": {
+          "x-ratelimit-limit": "5000",
+          "x-ratelimit-remaining": "4955",
+          "x-ratelimit-reset": "1794755860",
+          "x-ratelimit-resource": "core"
+        },
+        "attempts": 1,
+        "provider": "GitHub CLI credential store",
+        "account": {
+          "login": "chatgptopenaiagi",
+          "html_url": "https://github.com/chatgptopenaiagi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+          "public_repos": 34,
+          "followers": 3
+        }
+      }
+    }
+  ],
+  "repository_write": {
+    "status": "NOT_TESTED"
+  },
+  "account": {
+    "login": "chatgptopenaiagi",
+    "html_url": "https://github.com/chatgptopenaiagi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/207417324?v=4",
+    "public_repos": 34,
+    "followers": 3
+  }
+}

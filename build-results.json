@@ -1,0 +1,102 @@
+{
+  "mission": "GTB-001",
+  "timestamp": "2026-11-15T14:59:10.5943098Z",
+  "windows": {
+    "authenticode": "UNSIGNED",
+    "installer": "Inno Setup7.1.1 per-user",
+    "source_hashes": "reports/flutter-build-source-hashes.json",
+    "historical_failures": [
+      "Final compilation succeeded but first packaging attempt hit a GTB GUI DLL file lock. Retried after closing GTB and final packaging passed."
+    ],
+    "artifacts": [
+      {
+        "name": "GTB-Windows-Setup.exe",
+        "path": "dist\\windows\\GTB-Windows-Setup.exe",
+        "bytes": 11076316,
+        "sha256": "9aa109913557d9612e4b772fe4336b238b59f4721bbb794c53a883ebe56def6d"
+      },
+      {
+        "name": "GTB-Windows-Portable.zip",
+        "path": "dist\\windows\\GTB-Windows-Portable.zip",
+        "bytes": 12999041,
+        "sha256": "c9c3e53267003f4d24ec601e30a77d2d5302c586024dc5398381ee4ebb0cf2c5"
+      }
+    ],
+    "package": "PASS",
+    "compile": "PASS",
+    "flutter": "3.47.8",
+    "dart": "3.13.7",
+    "timestamp": "2026-11-15T14:49:57.9382503Z",
+    "platform": "windows-x64"
+  },
+  "android": {
+    "timestamp": "2026-11-15T14:57:47.0632904Z",
+    "signature": "PASS",
+    "target_api": 36,
+    "universal_abis": [
+      "armeabi-v7a",
+      "arm64-v8a",
+      "x86_64"
+    ],
+    "certificate_sha256": "423e51524b6893ca275468e089f4a3d68cd94d1d0f55d8f66da6d521cf3182ae",
+    "runtime_evidence": "reports/android-runtime.json",
+    "version": "0.1.0-beta.1",
+    "physical_arm64_runtime": "NOT_TESTED",
+    "build": "PASS",
+    "arm64_abis": [
+      "arm64-v8a"
+    ],
+    "minimum_api": 24,
+    "artifacts": [
+      {
+        "name": "GTB-Android-arm64.apk",
+        "path": "dist/android/GTB-Android-arm64.apk",
+        "bytes": 18412509,
+        "sha256": "fa2c52284eace24a863959d68912a7efd00fa22c6353272d51a3d82d2f6a4370"
+      },
+      {
+        "name": "GTB-Android-universal.apk",
+        "path": "dist/android/GTB-Android-universal.apk",
+        "bytes": 52426823,
+        "sha256": "ac939a2471e96378ba142e45458be5e58ae2a957e4faa371e11050493017e386"
+      }
+    ],
+    "package": "dev.gtb.github_test_button",
+    "repaired_attempts": 3,
+    "metadata": "PASS",
+    "signing": "Release key RSA4096, APK Signature Scheme v2"
+  },
+  "python": {
+    "timestamp": "2026-11-15T14:50:15.5906775Z",
+    "python_version": "3.10.0",
+    "package_version": "0.1.0b1",
+    "wheel_tag": "py3-none-any",
+    "runtime_dependencies": [],
+    "unit_tests": 61,
+    "unit_failed": 0,
+    "wheel_acceptance_tests": 10,
+    "wheel_acceptance_failed": 0,
+    "installed_module": "python/.venv-verify/Lib/site-packages/github_test_button",
+    "build_environment": "python/.venv-build",
+    "verification_environment": "python/.venv-verify",
+    "artifacts": [
+      {
+        "file": "github_test_button-0.1.0b1-py3-none-any.whl",
+        "sha256": "8d2972f2763c35eb4fce23a1b11ff583f8c47fb3ed28781237c40f9ef539ce9f",
+        "bytes": 16481
+      },
+      {
+        "file": "github_test_button-0.1.0b1.tar.gz",
+        "sha256": "e9d710f04f073f44993735dbe578dafafce6218c8c9aa8ca546b096dcb51f8f5",
+        "bytes": 20576
+      }
+    ],
+    "limitations": [
+      "Windows 11 execution verified; Linux and macOS runtime not locally tested",
+      "New private repository mode covered by controlled fixtures, not an additional live remote creation",
+      "Initial HTTP 406 due to vendor Accept header was repaired; initial permissive acceptance was superseded by strict validation"
+    ]
+  },
+  "artifact_validation": "PASS",
+  "classification": "GTB BETA READY WITH LIMITATIONS"
+}
