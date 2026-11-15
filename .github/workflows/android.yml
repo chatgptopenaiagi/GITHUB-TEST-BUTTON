@@ -1,0 +1,36 @@
+name: Android APK
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.8'
+          channel: stable
+          cache: true
+      - run: flutter pub get
+        working-directory: flutter
+      - run: flutter analyze
+        working-directory: flutter
+      - run: flutter test
+        working-directory: flutter
+      - name: Build verification APK (debug signing, not a release)
+        run: flutter build apk --debug --target-platform android-arm64
+        working-directory: flutter
+      - name: Verify package metadata
+        run: |
+          AAPT=$(find "$ANDROID_HOME/build-tools" -name aapt | sort -V | tail -n1)
+          "$AAPT" dump badging flutter/build/app/outputs/flutter-apk/app-debug.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-development-verification
+          path: flutter/build/app/outputs/flutter-apk/app-debug.apk
+          if-no-files-found: error

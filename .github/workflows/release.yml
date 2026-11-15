@@ -1,0 +1,113 @@
+name: Assemble draft release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag to assemble (never publishes stable automatically)
+        required: true
+        default: v0.1.0-beta.1
+permissions:
+  contents: write
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.8'
+          channel: stable
+      - name: Restore owner-managed release signing
+        env:
+          SIGNING_KEY: ${{ secrets.GTB_KEYSTORE_BASE64 }}
+        run: |
+          test -n "$SIGNING_KEY" || { echo 'Configure owner-managed signing secrets before release builds.'; exit 1; }
+          printf '%s' "$SIGNING_KEY" | base64 --decode > "$RUNNER_TEMP/gtb-release.p12"
+      - name: Test and build signed APK
+        working-directory: flutter
+        env:
+          GTB_KEYSTORE: ${{ runner.temp }}/gtb-release.p12
+          GTB_STORE_PASSWORD: ${{ secrets.GTB_STORE_PASSWORD }}
+          GTB_KEY_PASSWORD: ${{ secrets.GTB_KEY_PASSWORD }}
+          GTB_KEY_ALIAS: gtb-release
+        run: |
+          flutter pub get
+          flutter analyze
+          flutter test
+          flutter build apk --release --target-platform android-arm64
+          mkdir -p ../dist
+          cp build/app/outputs/flutter-apk/app-release.apk ../dist/GTB-Android-arm64.apk
+          SIGNER=$(find "$ANDROID_HOME/build-tools" -name apksigner | sort -V | tail -n1)
+          "$SIGNER" verify --verbose ../dist/GTB-Android-arm64.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-android
+          path: dist/*
+          if-no-files-found: error
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.8'
+          channel: stable
+      - run: flutter pub get
+        working-directory: flutter
+      - run: flutter test
+        working-directory: flutter
+      - run: ./scripts/Build-Windows.ps1
+        shell: pwsh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-windows
+          path: dist/windows/*
+          if-no-files-found: error
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python -m pip install build pytest jsonschema ./python
+      - run: python -m unittest discover -s python/tests -v
+      - run: python -m build python --outdir dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-python
+          path: dist/*
+          if-no-files-found: error
+  draft:
+    needs: [android, windows, python]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.tag }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          merge-multiple: true
+          path: dist
+      - name: Verify all mandatory assets and prepare draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: |
+          test -s dist/GTB-Windows-Setup.exe
+          test -s dist/GTB-Windows-Portable.zip
+          test -s dist/GTB-Android-arm64.apk
+          test -s dist/github_test_button-0.1.0b1-py3-none-any.whl
+          (cd dist && sha256sum *.exe *.zip *.apk *.whl *.gz > SHA256SUMS.txt)
+          gh release create "$RELEASE_TAG" --draft --prerelease --title "GTB $RELEASE_TAG" --notes-file RELEASE-NOTES.md dist/*

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github_test_button"
+version = "0.1.0b1"
+description = "Read-only GitHub diagnostics and explicitly confirmed repository write verification"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "GITHUB TEST BUTTON contributors"}]
+dependencies = []
+classifiers = ["Development Status :: 4 - Beta", "Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+gtb = "github_test_button.cli:main"
+
+[project.urls]
+Repository = "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON"
+
+[tool.setuptools.packages.find]
+where = ["src"]
