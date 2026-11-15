@@ -41,8 +41,9 @@ class WriteTest {
     Future<String> run(String exe, List<String> args) async {
       final result = await diagnostics.command(exe, args, directory: localPath);
       if (result.exitCode != 0) {
+        final safe = redact(result.stderr.toString());
         throw StateError(
-            '$exe failed (${result.exitCode}): ${redact(result.stderr.toString()).substring(0, result.stderr.toString().length.clamp(0, 500))}');
+            '$exe failed (${result.exitCode}): ${safe.substring(0, safe.length.clamp(0, 500))}');
       }
       return result.stdout.toString().trim();
     }

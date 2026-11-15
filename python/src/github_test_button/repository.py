@@ -88,6 +88,8 @@ class WriteTest:
     def verify_push_scope(self, git):
         if self.command([git, "remote", "get-url", "origin"]) != self.result["url"] + ".git":
             raise RuntimeError("Origin does not match the confirmed target")
+        if self.command([git, "remote", "get-url", "--push", "origin"]) != self.result["url"] + ".git":
+            raise RuntimeError("Push URL does not match the confirmed target")
         if self.command([git, "branch", "--show-current"]) != self.result["branch"]:
             raise RuntimeError("Local branch does not match the test branch")
         if self.command([git, "rev-parse", "HEAD"]) != self.result["commit"]:
@@ -162,14 +164,15 @@ class WriteTest:
                 self.verify_push_scope(git)
                 self.command([git, "-c", "credential.helper=", "-c", "credential.helper=!gh auth git-credential", "push", "--set-upstream", "origin", self.result["branch"]])
                 self.advance("PUSH_COMPLETED")
-            if STATES.index(self.result["state"]) < 8:
+            if STATES.index(self.result["state"]) >= 7:
                 check, data = client.request("/repos/" + self.target + "/contents/GTB-VERIFY.txt?ref=" + self.result["branch"], "repository_write")
                 if check.status != "CONNECTED" or not isinstance(data, dict) or base64.b64decode(data.get("content", "")).decode("utf-8") != self.result["marker"]:
                     raise RuntimeError("Remote content readback did not match the generated marker")
                 check, data = client.request("/repos/" + self.target + "/commits/" + self.result["branch"], "repository_write")
                 if check.status != "CONNECTED" or not isinstance(data, dict) or data.get("sha") != self.result["commit"]:
                     raise RuntimeError("Remote commit readback did not match the local commit")
-                self.advance("REMOTE_VERIFIED")
+                if self.result["state"] != "REMOTE_VERIFIED":
+                    self.advance("REMOTE_VERIFIED")
             self.result.update(status="CONNECTED", message="Unique test branch push, commit and content readback verified. Nothing was deleted.")
         except PermissionError as exc:
             self.result.update(status="ACCESS_DENIED", message=str(exc))

@@ -95,18 +95,21 @@ void main() {
         resolver: (host) async => ['127.0.0.1'],
         requester: (uri, json) async {
           if (uri.host == 'github.com') return const ApiResponse(200, {}, null);
-          if (uri.path.contains('summary'))
+          if (uri.path.contains('summary')) {
             return const ApiResponse(200, {}, {
               'status': {'indicator': 'minor', 'description': 'Minor incident'},
               'incidents': [],
               'components': []
             });
-          if (uri.path.contains('rate_limit'))
+          }
+          if (uri.path.contains('rate_limit')) {
             return const ApiResponse(200, {}, {
               'rate': {'remaining': 40}
             });
-          if (uri.path.contains('users'))
+          }
+          if (uri.path.contains('users')) {
             return const ApiResponse(200, {}, {'login': 'octocat'});
+          }
           return const ApiResponse(
               200, {}, {'current_user_url': 'https://api.github.com/user'});
         });

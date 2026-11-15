@@ -257,6 +257,8 @@ class WriteTests(unittest.TestCase):
                 return "a" * 40
             if args[-3:] == ["remote", "get-url", "origin"]:
                 return test.result["url"] + ".git"
+            if args[-4:] == ["remote", "get-url", "--push", "origin"]:
+                return test.result["url"] + ".git"
             if args[-2:] == ["branch", "--show-current"]:
                 return test.result["branch"]
             if args[-3:] == ["ls-tree", "--name-only", "HEAD"]:
@@ -321,6 +323,20 @@ class WriteTests(unittest.TestCase):
             Path(directory, "gtb-state.json").write_text(json.dumps(state))
             with self.assertRaisesRegex(ValueError, "branch"):
                 WriteTest(confirm=True, resume=directory)
+    def test_tampered_pushurl_rejected(self):
+        test = WriteTest("person/repo", confirm=True)
+        test.result["url"] = "https://github.com/person/repo"
+        test.command = Mock(side_effect=[test.result["url"] + ".git", "https://github.com/attacker/repo.git"])
+        with self.assertRaisesRegex(RuntimeError, "Push URL"):
+            test.verify_push_scope("git")
+    def test_completed_resume_rechecks_remote(self):
+        result, _ = self.run_fixture()
+        test = WriteTest(confirm=True, resume=result["local_directory"])
+        client = Mock()
+        client.request.side_effect = [(Check("repository", "CONNECTED", "ok"), {"permissions": {"push": True}}), (Check("repository_write", "ACCESS_DENIED", "missing"), None)]
+        with patch("shutil.which", return_value="fixture"), patch("github_test_button.repository.credential", return_value=("fixture", "test")), patch("github_test_button.repository.Client", return_value=client), patch("github_test_button.repository.auth_status", return_value=(Check("authentication", "CONNECTED", "ok"), {"login": "person"})):
+            self.assertEqual(test.execute()["status"], "UNKNOWN_ERROR")
+        self.assertEqual(client.request.call_count, 2)
 
 
 if __name__ == "__main__":

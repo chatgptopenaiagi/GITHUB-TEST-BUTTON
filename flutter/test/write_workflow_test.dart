@@ -23,8 +23,9 @@ class FakeWriteDiagnostics extends Diagnostics {
     invocations.add([exe, ...args]);
     if (args.contains('create')) creates++;
     if ((failure == 'commit' && args.contains('commit')) ||
-        (failure == 'push' && args.contains('push')))
+        (failure == 'push' && args.contains('push'))) {
       return ProcessResult(0, 1, '', 'failure ghp_privateSecretExample');
+    }
     return ProcessResult(0, 0, args.contains('rev-parse') ? 'abc123' : '', '');
   }
 
@@ -40,9 +41,10 @@ class FakeWriteDiagnostics extends Diagnostics {
             .encode(utf8.encode(failure == 'mismatch' ? 'wrong' : content))
       });
     }
-    if (path.contains('/commits/'))
+    if (path.contains('/commits/')) {
       return ApiResponse(
           200, {}, {'sha': failure == 'sha' ? 'wrong' : 'abc123'});
+    }
     return const ApiResponse(200, {}, {
       'permissions': {'push': true}
     });
@@ -53,8 +55,9 @@ class FakeWriteDiagnostics extends Diagnostics {
     if (path != null) {
       final normalized = Directory(path).absolute.path;
       final temp = Directory.systemTemp.absolute.path;
-      if (!normalized.startsWith(temp) || !normalized.contains('gtb-write-'))
+      if (!normalized.startsWith(temp) || !normalized.contains('gtb-write-')) {
         throw StateError('Unsafe test cleanup');
+      }
       await Directory(path).delete(recursive: true);
     }
   }
@@ -80,6 +83,8 @@ void main() {
         expect(r.details['state'], 'FILES_STAGED');
         expect(d.invocations.any((v) => v.contains('push')), false);
         expect(r.message, isNot(contains('privateSecretExample')));
+        expect(r.message, contains('git failed (1)'));
+        expect(r.message, isNot(contains('RangeError')));
       }
       if (failure == 'push') {
         expect(r.details['state'], 'REMOTE_READY');
