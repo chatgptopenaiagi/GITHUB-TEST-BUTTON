@@ -16,7 +16,7 @@ All three mandatory distributions were produced and independently checked. The W
 
 Local project root: `C:\xampp\GITHUB-TEST-BUTTON`.
 
-Account: `chatgptopenaiagi`. Product repository: https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON . Release target: https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1 . Final upload/download verification is recorded in GITHUB-RELEASE.md and release-verification.json.
+Account: `chatgptopenaiagi`. Product repository: https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON . Published prerelease: https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1 . All eight uploaded assets were downloaded and matched local SHA-256 values; anonymous API readback confirmed public prerelease status. Final verification is recorded in GITHUB-RELEASE.md and release-verification.json. Release tag source: `d8b8550c24a0b0a6068923fcabb8322eb8b16e86`.
 
 Genuine GitHub API and existing-CLI authentication passed in Python and Windows. Public Android API/repository checks passed. The actual CLI write-test commit `1a02583cc866df5d81e281456526c79f321dbc22` was independently read back from its unique verification branch. The ordinary button never performed writes.
 

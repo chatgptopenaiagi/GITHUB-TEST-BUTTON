@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-11-15T15:15:20.1319929Z",
+  "repository": "chatgptopenaiagi/GITHUB-TEST-BUTTON",
+  "release_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1",
+  "tag": "v0.1.0-beta.1",
+  "release_commit": "d8b8550c24a0b0a6068923fcabb8322eb8b16e86",
+  "is_draft": false,
+  "is_prerelease": true,
+  "anonymous_api_readback": "PASS",
+  "downloaded_assets": [
+    {
+      "name": "GTB-Android-arm64.apk",
+      "bytes": 18412509,
+      "sha256": "fa2c52284eace24a863959d68912a7efd00fa22c6353272d51a3d82d2f6a4370",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/GTB-Android-arm64.apk"
+    },
+    {
+      "name": "GTB-Android-universal.apk",
+      "bytes": 52426823,
+      "sha256": "ac939a2471e96378ba142e45458be5e58ae2a957e4faa371e11050493017e386",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/GTB-Android-universal.apk"
+    },
+    {
+      "name": "github_test_button-0.1.0b1-py3-none-any.whl",
+      "bytes": 16481,
+      "sha256": "8d2972f2763c35eb4fce23a1b11ff583f8c47fb3ed28781237c40f9ef539ce9f",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/github_test_button-0.1.0b1-py3-none-any.whl"
+    },
+    {
+      "name": "github_test_button-0.1.0b1.tar.gz",
+      "bytes": 20576,
+      "sha256": "e9d710f04f073f44993735dbe578dafafce6218c8c9aa8ca546b096dcb51f8f5",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/github_test_button-0.1.0b1.tar.gz"
+    },
+    {
+      "name": "GTB-Windows-Portable.zip",
+      "bytes": 12999041,
+      "sha256": "c9c3e53267003f4d24ec601e30a77d2d5302c586024dc5398381ee4ebb0cf2c5",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/GTB-Windows-Portable.zip"
+    },
+    {
+      "name": "GTB-Windows-Setup.exe",
+      "bytes": 11076316,
+      "sha256": "9aa109913557d9612e4b772fe4336b238b59f4721bbb794c53a883ebe56def6d",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/GTB-Windows-Setup.exe"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 575,
+      "sha256": "6d3c19d9213cebbe9f1e6aac2ced466cd107ef1f0cc648be4d2d2da93225f38c",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/SHA256SUMS.txt"
+    },
+    {
+      "name": "release-manifest.json",
+      "bytes": 1626,
+      "sha256": "b237de0e661f37465bfe3fe6a17a3d3f098ae54e2554410a04aade210e798421",
+      "download_matches": true,
+      "url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/download/v0.1.0-beta.1/release-manifest.json"
+    }
+  ],
+  "asset_count": 8,
+  "all_hashes_match": true
+}

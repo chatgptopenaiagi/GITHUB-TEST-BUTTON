@@ -8,5 +8,8 @@
   "initial_local_commit": "670490b94e82e591151bb7fc502a98d22ad20c09",
   "remote_commit": "670490b94e82e591151bb7fc502a98d22ad20c09",
   "readme_blob": "dcbca2f0247e0201537e7d0b8cacf1890e0bf5a5",
-  "creation_push_readback_verified": true
+  "creation_push_readback_verified": true,
+  "release_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1",
+  "release_commit": "d8b8550c24a0b0a6068923fcabb8322eb8b16e86",
+  "public_prerelease_verified": true
 }

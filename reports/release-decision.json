@@ -1,0 +1,16 @@
+{
+  "approved_for_prerelease": true,
+  "authorization": "GTB-001 explicit user publication authorization; engineering gates reviewed",
+  "commit": "d8b8550c24a0b0a6068923fcabb8322eb8b16e86",
+  "classification": "GTB BETA READY WITH LIMITATIONS",
+  "gates": {
+    "android_build": "PASS",
+    "windows_launch": "PASS",
+    "android_signing": "PASS",
+    "python_execution": "PASS",
+    "contract_tests": "PASS",
+    "windows_build": "PASS",
+    "python_install": "PASS"
+  },
+  "limitations": "reports/KNOWN-LIMITATIONS.md"
+}

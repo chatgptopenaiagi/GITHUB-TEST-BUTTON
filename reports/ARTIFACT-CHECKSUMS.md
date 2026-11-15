@@ -1,6 +1,6 @@
 # Artifact checksums
 
-SHA-256 of the actual final local distributions. Published downloads are verified independently after release upload.
+SHA-256 of the actual final distributions. All published downloads were independently retrieved and matched these local hashes. The manifest and checksum file downloads also matched; see root release-verification.json for all eight receipts.
 
 | Artifact | Bytes | SHA-256 |
 |---|---:|---|

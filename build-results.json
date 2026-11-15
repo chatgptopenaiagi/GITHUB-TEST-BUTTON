@@ -98,5 +98,12 @@
     ]
   },
   "artifact_validation": "PASS",
-  "classification": "GTB BETA READY WITH LIMITATIONS"
+  "classification": "GTB BETA READY WITH LIMITATIONS",
+  "publication": {
+    "release_url": "https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1",
+    "status": "PASS",
+    "all_downloaded_hashes_match": true,
+    "asset_count": 8,
+    "release_commit": "d8b8550c24a0b0a6068923fcabb8322eb8b16e86"
+  }
 }

@@ -1,0 +1,35 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+[
+  {
+    "name": "GTB-Windows-Setup.exe",
+    "path": "dist/windows/GTB-Windows-Setup.exe",
+    "bytes": 11076316,
+    "sha256": "9aa109913557d9612e4b772fe4336b238b59f4721bbb794c53a883ebe56def6d"
+  },
+  {
+    "name": "GTB-Windows-Portable.zip",
+    "path": "dist/windows/GTB-Windows-Portable.zip",
+    "bytes": 12999041,
+    "sha256": "c9c3e53267003f4d24ec601e30a77d2d5302c586024dc5398381ee4ebb0cf2c5"
+  },
+  {
+    "name": "GTB-Android-arm64.apk",
+    "path": "dist/android/GTB-Android-arm64.apk",
+    "bytes": 18412509,
+    "sha256": "fa2c52284eace24a863959d68912a7efd00fa22c6353272d51a3d82d2f6a4370"
+  },
+  {
+    "name": "github_test_button-0.1.0b1-py3-none-any.whl",
+    "path": "dist/python/github_test_button-0.1.0b1-py3-none-any.whl",
+    "bytes": 16481,
+    "sha256": "8d2972f2763c35eb4fce23a1b11ff583f8c47fb3ed28781237c40f9ef539ce9f"
+  }
+]
+https://github.com/chatgptopenaiagi/GITHUB-TEST-BUTTON/releases/tag/v0.1.0-beta.1
