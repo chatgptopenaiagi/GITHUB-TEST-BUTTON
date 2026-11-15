@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#101b2c"/>
+<circle cx="256" cy="230" r="145" fill="none" stroke="#29435e" stroke-width="22"/>
+<path d="M137 242h61l35-72 53 130 34-58h55" fill="none" stroke="#56ead3" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="375" cy="242" r="19" fill="#a5b4fc"/>
+<text x="256" y="438" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="70" font-weight="700" letter-spacing="12" fill="#edf5ff">GTB</text>
+</svg>

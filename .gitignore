@@ -1,0 +1,22 @@
+# Build products and machine-local evidence
+dist/
+.venv*/
+.tools/
+.private/
+.verify/
+**/__pycache__/
+**/*.egg-info/
+**/.pytest_cache/
+**/.dart_tool/
+**/build/
+**/.gradle/
+**/local.properties
+**/key.properties
+**/*.jks
+**/*.keystore
+*.log
+reports/raw/
+reports/private/
+*.user
+.DS_Store
+
