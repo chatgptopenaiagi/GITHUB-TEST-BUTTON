@@ -8,9 +8,9 @@ if(!(Test-Path "$ProjectRoot/flutter/android/key.properties") -and !$env:GTB_KEY
 Push-Location "$ProjectRoot/flutter"
 try {
     Invoke-Flutter @('pub','get')
-    Invoke-Flutter @('build','apk','--release','--target-platform','android-arm64')
+    Invoke-Flutter @('build','apk','--release','--target-platform','android-arm64','--split-per-abi')
     New-Item -ItemType Directory -Force "$ProjectRoot/dist/android" | Out-Null
-    Copy-Item 'build/app/outputs/flutter-apk/app-release.apk' "$ProjectRoot/dist/android/GTB-Android-arm64.apk" -Force
+    Copy-Item 'build/app/outputs/flutter-apk/app-arm64-v8a-release.apk' "$ProjectRoot/dist/android/GTB-Android-arm64.apk" -Force
     if($Universal){
         Invoke-Flutter @('build','apk','--release','--target-platform','android-arm,android-arm64,android-x64')
         Copy-Item 'build/app/outputs/flutter-apk/app-release.apk' "$ProjectRoot/dist/android/GTB-Android-universal.apk" -Force

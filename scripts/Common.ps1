@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $script:ProjectRoot = Split-Path $PSScriptRoot -Parent
+New-Item -ItemType Directory -Force (Join-Path $script:ProjectRoot 'reports') | Out-Null
 function Resolve-Tool([string]$Name, [string[]]$Candidates = @()) {
     foreach ($p in $Candidates) { if ($p -and (Test-Path -LiteralPath $p -PathType Leaf)) { return $p } }
     $c = Get-Command $Name -ErrorAction SilentlyContinue
@@ -24,5 +25,5 @@ function Invoke-Flutter([string[]]$Arguments) {
 }
 function Assert-Artifact([string]$Path) {
     if (!(Test-Path -LiteralPath $Path -PathType Leaf) -or (Get-Item -LiteralPath $Path).Length -eq 0) { throw "Artifact missing or empty: $Path" }
-    [pscustomobject]@{ name = Split-Path $Path -Leaf; path = [IO.Path]::GetRelativePath($script:ProjectRoot, $Path); bytes = (Get-Item $Path).Length; sha256 = (Get-FileHash $Path -Algorithm SHA256).Hash.ToLowerInvariant() }
+    [pscustomobject]@{ name = Split-Path $Path -Leaf; path = [IO.Path]::GetRelativePath($script:ProjectRoot, $Path).Replace('\','/'); bytes = (Get-Item $Path).Length; sha256 = (Get-FileHash $Path -Algorithm SHA256).Hash.ToLowerInvariant() }
 }
